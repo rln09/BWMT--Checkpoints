@@ -1,0 +1,154 @@
+/* ===================
+   Reset & Base Styles
+   =================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* ===================
+   Typography
+   =================== */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #4a4a4a;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    color: #4b0082; /* Indigo/dark purple */
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+
+p {
+    margin-bottom: 1rem;
+}
+/* ===================
+   Links
+   =================== */
+a {
+    color: #9370db; /* Medium purple */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #6a0dad; /* Darker purple */
+}
+
+a:focus {
+    outline: 2px solid #9370db;
+    outline-offset: 2px;
+}
+/* ===================
+   Layout Structure
+   =================== */
+header {
+    background-color: #6a0dad; /* Dark purple */
+    color: #ffffff;
+    padding: 1rem;
+}
+
+header h1 {
+    color: #ffffff;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #f0e6ff; /* Light purple tint */
+    padding: 1rem;
+    text-align: center;
+    color: #4b0082; /* Dark purple for contrast */
+}
+/* ===================
+   Navigation
+   =================== */
+nav {
+    background-color: #4b0082;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0.5rem;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color:  #4b0082(255, 255, 255, 0.2);
+    text-decoration: none;
+}/* ===================
+   Media Queries
+   =================== */
+
+/* Tablet and up */
+@media (min-width: 768px) {
+    nav ul {
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        padding: 2rem;
+    }
+}
+/* Desktop and up */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .content-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header, footer {
+        text-align: center;
+    }
+}
