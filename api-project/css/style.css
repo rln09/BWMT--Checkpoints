@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #f5f5f5;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.controls {
+    margin-bottom: 1.5rem;
+}
+
+button {
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #0055aa;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#status {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.loading {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.error {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.success {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+#posts-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.post-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.post-card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.post-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.post-card .meta {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #999;
+}
+.error-message {
+    background: #fff3f3;
+    border: 1px solid #ffcdd2;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.error-message h3 {
+    color: #c62828;
+    margin-bottom: 0.5rem;
+}
+
+.error-message p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.retry-btn {
+    background: #ef5350;
+}
+
+.retry-btn:hover {
+    background: #e53935;
+}
