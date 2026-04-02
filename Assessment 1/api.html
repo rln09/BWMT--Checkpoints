@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Fundamentals Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+
+    <header>
+        <h1>RLN</h1>
+       
+    <nav>
+        <ul>
+           <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a>
+            <li><a href="projects.html">Projects</a>
+            <li><a href="api.html">APIs</a>
+        </ul>
+    </nav>
+    </header>
+
+         <main>
+        <div class="api-container">
+            <h2>📡 API Data Explorer</h2>
+            <p>Fetch real data from public APIs with one click.</p>
+
+            <!-- API Buttons -->
+            <div class="api-buttons">
+                <button class="api-btn" data-api="posts">📝 Get Posts</button>
+                <button class="api-btn" data-api="users">👥 Get Users</button>
+                <button class="api-btn" data-api="countries">🌍 Get Countries</button>
+                <button class="api-btn" data-api="dog">🐕 Random Dog</button>
+                <button class="api-btn" data-api="cat">🐱 Random Cat</button>
+                <button class="api-btn" data-api="fact">💡 Random Fact</button>
+            </div>
+
+            <!-- Search Box (for countries) -->
+            <div class="search-box">
+                <input type="text" id="country-search" placeholder="Search for a country... e.g., Canada, Japan">
+                <button id="search-country">🔍 Search Country</button>
+            </div>
+
+            <!-- Status Messages -->
+            <div id="status" class="status"></div>
+
+            <!-- Results Area -->
+            <div id="results" class="results">
+                <p class="placeholder">👈 Click a button above to fetch data from an API!</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 RLN. Created for ISYS3004.</p>
+        <p class="acknowledgments">API Source: <a href="https://restcountries.com/" target="_blank">REST Countries API</a> | Built with assistance from AI tools for learning purposes</p>
+    </footer>
+
+    <script src="api-script.js"></script>
+</body>
+</html>

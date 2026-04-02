@@ -1,0 +1,299 @@
+/* ===================
+   Reset & Base Styles
+   =================== */
+*,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.centered-image {
+    text-align: center;
+}
+
+.centered-image img {
+    display: inline-block;
+}
+
+
+/* ===================
+   Typography
+   =================== */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                 'Segoe UI', Roboto, sans-serif;
+    color: #340462;;
+    background-color: #ebe0f0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    color: #340462;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+
+p {
+    margin-bottom: 1rem;
+}
+/* ===================
+   Links
+   =================== */
+a {
+    color: #340462;;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#340462;;
+}
+
+a:focus {
+    outline: 2px solid #340462;;
+    outline-offset: 2px;
+}
+/* ===================
+   Content Layout
+   =================== */
+.content-grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+section {
+    background-color: #75257d;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+/* ===================
+   Navigation
+   =================== */
+nav {
+    background-color: #75257d;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0.5rem;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: rgba(232, 231, 235, 0.896);
+    text-decoration: none;
+}
+
+section {
+    background: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+button {
+    background: #75257d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #dd71e7;
+}
+
+#count {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+section {
+    background: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+button {
+    background: #340462;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #644094;
+}
+
+#count {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.choices {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.choice-btn {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    .choice-btn.selected {
+    background-color: #644094;
+    transform: scale(1.1);
+}
+}
+
+#result {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+#flatland {
+    text-align: center;
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    background-color: #0000aa;
+    margin: 2rem auto;
+    transition: all 0.3s ease;
+}
+
+#square:hover {
+    transform: rotate(45deg);
+}
+
+#square.green { background-color: #00aa00; }
+#square.red { background-color: #780505; }
+#square.blue { background-color: #0000aa; }
+#square.large { transform: scale(1.5); }
+/* ===================
+   APIS
+   =================== */
+.controls {
+    margin-bottom: 1.5rem;
+}
+
+button {
+    background: #340462;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #644094;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#status {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.loading {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.error {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.success {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+#posts-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.post-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.post-card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.post-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.post-card .meta {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #999;
+}
